@@ -8,14 +8,42 @@
     <link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body>
-    <div class="main">
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Quiz</a>
+                </li>
+                <li>
+                    <a href="">Hypotenuse</a>
+                </li>
+                <li>
+                    <a href="">Area</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
     <h1>isTriangle</h1>
+    <img id="math-icon" src="icon/mathicon.svg" alt="icon">
+    <br>
+    <div class="inputs">
     <label for="angle-1">Angle 1</label>
+    <br>
     <input id="angle-1"  type="number">
+    <br>
     <label for="angle-2">Angle-2</label>
+    <br>
     <input id="angle-2"  type="number">
+    <br>
     <label for="angle-3">Angle-3</label>
+    <br>
     <input id="angle-3"  type="number">
+     <br>
+    <button id="btn-triangle">Is Triangle</button>
+
+    <p id="show-erro"></p>
+    </div>
     </div>
     <script src="app.js"></script>
 </body>
