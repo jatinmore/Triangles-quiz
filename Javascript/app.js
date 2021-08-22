@@ -1,11 +1,7 @@
 var inputValue = document.querySelectorAll('.angle-input');
 var btnCheckTriangle = document.querySelector('#btn-triangle');
 var output = document.querySelector('#show-output');
-btnCheckTriangle.addEventListener('click',function isTriangle()
-{
-    calculateSum();
-
-})
+btnCheckTriangle.addEventListener('click',calculateSum);
 
 function calculateSum()
 {
