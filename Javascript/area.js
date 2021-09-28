@@ -9,7 +9,13 @@ btnArea.addEventListener('click',function calculateAot(){
     const base=Number(side[0].value);
     const height=Number(side[1].value);
     const areaOfTriangle=base*height/2;
-
-    outputDisplay.innerText='The area of the triangle is = '+ areaOfTriangle;
+    if(base<0 || height<0)
+    {
+        alert('Invalid Value');
+    }
+    else{
+        outputDisplay.innerText='The area of the triangle is = '+ areaOfTriangle;
+    }
+  
     console.log(areaOfTriangle)
 })

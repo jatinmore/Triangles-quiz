@@ -10,7 +10,14 @@ function calculateHypotenuse()
     const b=Number(sideInput[1].value);
     const sumOfSides=a*a + b*b;
     const hypotenuseVal=Math.sqrt(sumOfSides)
+    if(a<0 || b<0){
+        alert('Invalid Values');
 
-    output.innerText= 'The length of the hypotenuse is = '+ hypotenuseVal;
+    }
+    else{
+        output.innerText= 'The length of the hypotenuse is = '+ hypotenuseVal;
+    }
+
+  
     console.log(sumOfSides)
 }
