@@ -10,16 +10,22 @@ btnCheckTriangle.addEventListener('click',function calculateSum()
     
     
     var sum=0;
-   
-    if(inputValue <0){
-        outputEl.innerText="Please Enter Positive Numbers!!"
-    }
-    else{
+//     for(let j=0;j<inputValue.length;j++)
+// {
+//     if(inputValue[j].value < 0){
+//         outputEl.innerText="Please Enter Positive Numbers!!"
+//     }
+//     else{
 
-
+    
+    
     for(let i=0;i<inputValue.length;i++)
     {
         var num = Number(inputValue[i].value);
+        if(num<0)
+        {
+            alert('Please Enter Positive Values')
+        }
         sum = sum + num;
           
     }
@@ -33,7 +39,9 @@ btnCheckTriangle.addEventListener('click',function calculateSum()
     }
     return sum;
 }
-});
+// }
+  
+);
 
 
 
