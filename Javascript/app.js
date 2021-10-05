@@ -11,6 +11,11 @@ btnCheckTriangle.addEventListener('click',function calculateSum()
     
     var sum=0;
    
+    if(inputValue <0){
+        outputEl.innerText="Please Enter Positive Numbers!!"
+    }
+    else{
+
 
     for(let i=0;i<inputValue.length;i++)
     {
@@ -27,7 +32,7 @@ btnCheckTriangle.addEventListener('click',function calculateSum()
         outputEl.innerText="❌sum of angles is wrong!! ,please try again";
     }
     return sum;
-
+}
 });
 
 
