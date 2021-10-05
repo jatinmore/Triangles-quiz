@@ -2,7 +2,7 @@ var quizForm = document.querySelector('.quiz-form');
 var btnSubmit = document.querySelector('#btn-submit');
 var showScore = document.querySelector('#show-score');
 
-const rightAnswers = ['90', 'Right Angled'];
+const rightAnswers = ['90', 'Right Angled','isosceles triangle','scalene triangle'];
 
 btnSubmit.addEventListener('click',calcQuizScore );
 
